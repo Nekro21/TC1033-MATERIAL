@@ -28,12 +28,17 @@ int main(int argc, const char * argv[]) {
     // se ejecuta el metodo correspondiente al tipo del objeto apuntado
     // no al tipo del apuntador
     cout << "**** Alimentos Grupo2 ****" << endl;
-    for(int iR = 0; iR < 8; iR++)
+    for(int iR = 0; iR < 8; iR++){
+     cout << iR << ' ' << ptrArrAlimentos2[iR] << ' ';
         ptrArrAlimentos[iR]->dibuja();
+    }
     
     cout << "**** Alimentos Grupo3 ****" << endl;
-    for(int iR = 0; iR < 8; iR++)
+    for(int iR = 0; iR < 8; iR++){
+    // desplegar direccion de memoria
+    cout << iR << ' ' << ptrArrAlimentos2[iR] << ' ';
           ptrArrAlimentos2[iR]->dibuja();
     return 0;
+    }
 }
 

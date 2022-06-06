@@ -7,12 +7,17 @@
 //
 
 #include "Alimento.hpp"
+#include <iostream>
 
 
 Alimento::Alimento(){
     ingrediente1 = "Queso";
     ingrediente2 = "Salami";
     precio = 200;
+}
+
+Alimento::~Alimento(){
+    cout << "Se destruyo un alimento\n";
 }
 
 // no se hace la codificación del método dibuja -

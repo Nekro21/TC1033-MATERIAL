@@ -18,6 +18,7 @@ public:
     string ingrediente2;
     int precio;
     Alimento();
+    ~Alimento();
     // Funcion virtual pura - funcion abstracta
     virtual void dibuja() = 0;
 };
